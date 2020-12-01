@@ -11,12 +11,9 @@ function gettingJSON(){
     let query = 'https://api.openweathermap.org/data/2.5/weather?q=${location}&units=${format}&appid=${APIID}';
     console.log("Query is :" + query);
 
-    //Create and set variables for each of the elements you
-    //need to update, location, temp, the image, etc.
-
-    let loc;
-    let temp;
-    let tempImg;
+    var loc;
+    var temp;
+    var tempImg;
 
     $.getJSON(query,function(json){
         $("#tempImg").attr("src", 'http://openweathermap.org/img/wn/${json.weather[0].icon}.png')
