@@ -1,6 +1,6 @@
 function gettingJSON(){
     let APIID = 'a6ff91d429cbee7d0ccf6ca11e2a8d03';
-    let location = 'Ann Arbor, US'
+    let location = 'Ann Arbor, MI'
     if (document.querySelector("#location").value !== "") location = document.querySelector("#location").value
     console.log("Location is : " + location);
 
